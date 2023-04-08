@@ -18,6 +18,7 @@ export class OverwritePageComponent implements OnInit {
   cars: Car[] = [];
 
   constructor() {
+
     Carousel.prototype.onTouchEnd = function (e) {
       let touchobj = e.changedTouches[0];
       if (this.isVertical()) {
@@ -32,21 +33,6 @@ export class OverwritePageComponent implements OnInit {
         this.navForward(e);
       } else {
         this.navBackward(e);
-      }
-    };
-
-    Carousel.prototype.navForward = function (e, index?) {
-      if (this.isCircular() || this._page < this.totalDots() - 1) {
-        this.step(-1, index);
-      }
-
-      if (this.autoplayInterval) {
-        this.stopAutoplay();
-        this.allowAutoplay = false;
-      }
-
-      if (e && e.cancelable) {
-        e.preventDefault();
       }
     };
 
