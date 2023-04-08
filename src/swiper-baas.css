@@ -1,15 +1,5 @@
 @import "~swiper/swiper-bundle.min.css";
 
-.swiper-pagination-horizontal {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;
-  background-color: #ffffff;
-  z-index: 9999;
-}
-
 .baas-swiper-container {
   height: 100%;
   background-color: #3033c4;
@@ -50,11 +40,26 @@
   width: 100%;
 }
 
-.swiper {
+.swiper-baas {
   height: 20rem;
   border-radius: 10px;
 }
 
 ::ng-deep .swiper-slide {
   border-radius: 10px;
+}
+
+.swiper-pagination-horizontal {
+  position: fixed;
+  left: 0;
+  bottom: 0 !important;
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+.swiper-pagination-bullet {
+  width: 0.5rem;
+  height: 0.5rem;
 }
