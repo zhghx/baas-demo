@@ -25,6 +25,7 @@ import { SwiperModule } from 'swiper/angular';
 // DEMO PAGE
 import { OverwritePageComponent } from './pages/indrident/overwrite-page/overwrite-page.component';
 import { Swiperdemo1PageComponent } from './pages/indrident/swiperdemo1-page/swiperdemo1-page.component';
+import { RiyoukeiyakuPageComponent } from './pages/indrident/riyoukeiyaku-page/riyoukeiyaku-page.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { Swiperdemo1PageComponent } from './pages/indrident/swiperdemo1-page/swi
     AppComponent,
     OverwritePageComponent,
     Swiperdemo1PageComponent,
+    RiyoukeiyakuPageComponent,
   ],
   imports: [
     BrowserModule,
