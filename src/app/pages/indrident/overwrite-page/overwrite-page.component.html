@@ -1,0 +1,30 @@
+<h2 style="color: green">GeeksforGeeks</h2>
+<h4>Angular PrimeNG Carousel Basic</h4>
+
+<p-carousel [value]="cars" [showNavigators]="false">
+  <ng-template let-car pTemplate="item">
+    <div class="product-item">
+      <div class="product-item-content">
+        <div class="p-mb-3"></div>
+        <div>
+          <h4
+            class="p-mb-1">
+            {{ car.id }}
+          </h4>
+          <h4
+            class="p-mb-1">
+            {{ car.name }}
+          </h4>
+          <h4
+            class="p-mb-1">
+            {{ car.description }}
+          </h4>
+          <h6
+            class="p-mt-0 p-mb-3">
+            ${{ car.price }}
+          </h6>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

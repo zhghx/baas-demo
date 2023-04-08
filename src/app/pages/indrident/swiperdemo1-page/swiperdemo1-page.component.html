@@ -1,0 +1,20 @@
+<ng-container>
+  <swiper
+    [slidesPerView]="1.25"
+    [spaceBetween]="15"
+    [centeredSlides]="true"
+    [navigation]="false"
+    [breakpoints]="breakpoints"
+    [pagination]="{ clickable: true }"
+    class="swiper"
+  >
+    <ng-template swiperSlide *ngFor="let d of data;">
+      <div class="baas-swiper-container">
+        <div class="name">{{ d.name }}</div>
+
+
+
+      </div>
+    </ng-template>
+  </swiper>
+</ng-container>

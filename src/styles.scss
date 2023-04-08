@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+//html {font-size: 62.5%;} /*10 ÷ 16 × 100% = 62.5% (default 16px)*/}
+html {font-size: 110%;}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
+}
+
