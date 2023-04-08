@@ -22,7 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // SwiperModule
 import { SwiperModule } from 'swiper/angular';
 
-//
+// DEMO PAGE
 import { OverwritePageComponent } from './pages/indrident/overwrite-page/overwrite-page.component';
 import { Swiperdemo1PageComponent } from './pages/indrident/swiperdemo1-page/swiperdemo1-page.component';
 
