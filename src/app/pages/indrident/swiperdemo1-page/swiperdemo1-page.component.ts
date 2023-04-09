@@ -1,4 +1,5 @@
 import {Component, OnInit, AfterViewInit, Input} from '@angular/core';
+import {Router} from "@angular/router";
 
 // import Swiper core and required components
 import SwiperCore, {
@@ -12,6 +13,7 @@ import SwiperCore, {
   Thumbs,
   Controller,
 } from 'swiper';
+
 
 // install Swiper components
 SwiperCore.use([
@@ -37,7 +39,7 @@ export class Swiperdemo1PageComponent implements OnInit{
 
   data: any;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   breakpoints = {
@@ -64,5 +66,10 @@ export class Swiperdemo1PageComponent implements OnInit{
         name:"123123123"
       },
     ]
+  }
+
+  toBtn = () => {
+    console.log(123123123);
+    this.router.navigate(["page1"]);
   }
 }

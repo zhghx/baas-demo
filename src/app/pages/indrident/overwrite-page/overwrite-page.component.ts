@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Carousel} from 'primeng/carousel';
+import {Router} from '@angular/router';
 
 interface Car {
   id?: string;
@@ -17,7 +18,7 @@ export class OverwritePageComponent implements OnInit {
 
   cars: Car[] = [];
 
-  constructor() {
+  constructor(private router: Router) {
 
     Carousel.prototype.onTouchEnd = function (e) {
       let touchobj = e.changedTouches[0];
@@ -59,6 +60,11 @@ export class OverwritePageComponent implements OnInit {
         price: 10000,
       },
     ];
+  }
+
+  toBtn = () => {
+    console.log(123123123);
+    this.router.navigate(["page2"]);
   }
 
 

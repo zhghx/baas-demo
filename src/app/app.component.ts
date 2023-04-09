@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {ResolveStart, Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,17 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'test4m7dp1';
 
-  constructor() {
+  showHeader = true;
 
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof ResolveStart) {
+        if (event.url === "/page2") {
+          this.showHeader = false;
+        } else {
+          this.showHeader = true;
+        }
+      }
+    });
   }
 }
